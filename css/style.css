@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400&family=Josefin+Sans:wght@300;400;500;600&family=Raleway:ital,wght@0,200;0,400;0,500;0,600;1,300;1,400&display=swap');
+
+:root{
+    --bg-color: white;
+    --font-color: black;
+    --title-font: 'Josefin Sans', sans-serif;
+    --content-font: 'Raleway', sans-serif;
+    --typing-font: 'IBM Plex Mono', monospace;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+html,body{
+    overflow-x: hidden;
+}
+.title{
+    font-family: var(--title-font);
+}
+.content{
+    font-family: var(--content-font);
+}
+.typing{
+    font-family: var(--typing-font);
+}
+.bg_color{
+    background-color: var(--bg-color);
+}
+.font_color{
+    color: var(--font-color);
+}
+
+body.dark{
+    --bg-color: black;
+    --font-color: white;
+}
+
+::-webkit-scrollbar {
+    width: .60rem;
+    background-color: var(--bg-color);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #bbb;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #aaa;
+  }
+
+html{
+    scroll-behavior: smooth;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+
+section{
+    padding-top: 4rem;
+    min-height: 100vh;
+}
+header{
+    transition: all 0.3s;
+}
+.header_top{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+.box:hover{
+    cursor: pointer;
+}
+.stick{
+    width: 40px;
+    height: 4px;
+    background: var(--font-color);
+    margin-bottom: 5px;
+    transition: all 0.5s ease;
+}
+.aaStyle{
+    transform: rotate(45deg) translate(4px, 9px);
+}
+.bbStyle{
+    opacity: 0;
+}
+.ccStyle{
+    transform: rotate(-45deg) translate(4px, -9px);
+}
+.navigation{
+    position: fixed;
+    z-index: 0;
+    display: flex;
+    opacity: 0;
+    transition: all 0.3s;
+    background: var(--bg-color);
+}
+.navigation a, .mode, .mode > *{
+    color: var(--font-color);
+}
+
+.isShow{
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    opacity: 1;
+}
+
+.navContainer{
+    transition: all 0.3s ease;
+}
+
+.navContainer li{
+    opacity: 0.5;
+}
+
+.navContainer li:hover{
+    opacity: 1;
+}
+
+.activate{
+    border-bottom: 2px solid var(--font-color);
+    opacity: 1 !important;
+}
+
+.navAnimation{
+    transform: translateY(50px);
+}
+
+.mode_switch:hover{
+    cursor: pointer;
+}
+.arrow_container{
+    width: 45px;
+    height: 45px;
+    border: thin solid var(--font-color);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.arrow_container:hover{
+    cursor: pointer;
+}
+.arrow_container a{
+    display: block;
+    padding: 10px;
+}
+
+        /* HOME */
+.profile_photo, .about_photo, .services_photo, .contact_photo{
+    display: block;
+    margin: auto;
+}
+
+.profile_photo{
+    max-width: 60%;
+    border-radius: 100%;
+    border: 1px solid var(--font-color);
+    padding: 5px;
+}
+.about_photo{
+    max-width: 80%;
+}
+.services_photo{
+    max-width: 80%;
+}
+.contact_photo{
+    max-width: 100%;
+}
+.labels{
+    font-size: large;
+    transition: all 0.3s;
+}
+.labels:hover{
+    cursor: pointer;
+}
+.label_active{
+    padding: 0 5px;
+    border-radius: 5px 5px 0 0;
+    color: white;
+    font-weight: bold;
+}
+.ui>div, #ui.label_active{
+    background: #64cbe8;
+}
+.front>div, #front.label_active{
+    background: #97c73d;
+}
+.back>div, #back.label_active{
+    background: #7191b7;
+}
+.info_text{
+    width: fit-content;
+    margin: auto;
+}
+.about_text{
+    text-align: justify;
+}
+input, textarea, button{
+    width: 100%;
+    border: thin solid var(--font-color);
+    padding: 5px 10px;
+    border-radius: 5px;
+    outline: none;
+    font-weight: 500;
+    background-color: var(--bg-color);
+    color: var(--font-color);
+}
+button{
+    max-width: 100%;
+    transition: all 0.5s;
+}
+button:hover{
+    background: #444;
+    color: white;
+}
+::placeholder{
+    color: var(--font-color);
+    opacity: 0.7;
+}
+footer{
+    margin-top: 10px;
+    border-top: thin solid var(--font-color);
+}
