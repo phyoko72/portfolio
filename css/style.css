@@ -133,6 +133,10 @@ header{
     opacity: 1 !important;
 }
 
+.icon{
+    width: 30px;
+}
+
 .navAnimation{
     transform: translateY(50px);
 }
