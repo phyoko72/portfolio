@@ -185,12 +185,13 @@ header{
 .labels{
     font-size: large;
     transition: all 0.3s;
+    padding: 8px;
 }
 .labels:hover{
     cursor: pointer;
 }
 .label_active{
-    padding: 0 5px;
+    /* padding: 0 5px; */
     border-radius: 5px 5px 0 0;
     color: white;
     font-weight: bold;
